@@ -1,3 +1,6 @@
 package com.tistory.povia.tacos
 
-data class Taco(val name:String?=null, val ingredients:List<Ingredient>?=null)
+data class Taco(
+  var name:String?=null,
+  var ingredients:List<Ingredient>?=null
+)
