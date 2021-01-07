@@ -1,8 +1,8 @@
 package com.tistory.povia.tacos
 
 import org.hamcrest.Matchers.containsString
+import org.junit.jupiter.api.Test
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
-
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest
@@ -15,10 +15,11 @@ class HomeControllerTest {
     @Autowired
     private lateinit var mockMvc: MockMvc
 
+    @Test
     fun testHomePage() {
       mockMvc.perform(get("/"))
         .andExpect(status().isOk())
         .andExpect(view().name("home"))
-        .andExpect(content().string(containsString("Welcome to...")))
+        .andExpect(content().string(containsString("Welcome To...")))
     }
 }
