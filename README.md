@@ -7,4 +7,6 @@ HomeController 설정
 ##Chapter 2
 Controller: OrderController, DesignTacoController  
 Configure: WebConfig  
-Data Classes: Order, Taco, Ingredient
+Data Classes: Order, Taco, Ingredient  
+주 내용: View - Controller - Service - Model 간 연결(MVC)  
+##Chapter 3
